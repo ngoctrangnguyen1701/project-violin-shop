@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+/*********************** Demo - 4 *******************/
+.box4 .icon li a{text-align:center}
+.box4:before{content:""}
+.box4{overflow:hidden}
+.box4{position:relative}
+.box4:before{
+    width:0;height:200%;background:rgba(0,0,0,.5);
+    position:absolute;top:0;left:-250px;bottom:0;
+    transform:skewX(-36deg);transition:all .5s ease 0s
+}
+.gioi-thieu-item:hover .box4:before{width:300%}
+/*.box4:hover:before{width:200%}*/
+.box4 img{width:100%;height:auto}
+.box4 .box-content
+{
+    width:100%;height:100%;padding-top:45%;
+    position:absolute;top:0;left:0;
+    transform:scale(0);transition:all .3s ease 0s
+}
+
+.gioi-thieu-item:hover .box-content{transform:scale(1)}
+/*.box4:hover .box-content{transform:scale(1)}*/
+
+
+/*@media only screen and (max-width:990px){.box4{margin-bottom:30px}
+}
+@media only screen and (max-width:767px){.box4:before{left:-400px}
+.box4:hover:before{width:300%}
+}*/
